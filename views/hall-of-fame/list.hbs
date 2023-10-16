@@ -1,8 +1,25 @@
 <h2>Sala sław</h2>
 <table>
+  <thead>
   <tr>
-    <td>
-      ...
-    </td>
+    <th>#</th>
+    <th>Ilość zwycięstw</th>
+    <th>Imię</th>
   </tr>
+  </thead>
+  <tbody>
+  {{#each warriors}}
+    <tr>
+      <th>
+        {{this.place}}
+      </th>
+      <td>
+        {{this.wins}}
+      </td>
+      <td>
+        {{this.name}}
+      </td>
+    </tr>
+  {{/each}}
+  </tbody>
 </table>
